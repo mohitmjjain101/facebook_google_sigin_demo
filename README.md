@@ -1,8 +1,10 @@
 # facebook_google_sigin_demo
 
-# Clone the Repository
+Clone the Repository
 
-# Run npn start
+Run npn install
 
-# open localhost:3000 on browser
+Run npm start
+
+open localhost:3000 on browser
 
