@@ -1,0 +1,99 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Google and Facebook Signin",
+        "description": "Google and Facebook Signin using the Express Framework",
+        "license": {
+            "name": "",
+            "url": ""
+        }
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "Home Page",
+            "description": "API for Login using Facebook or Google"
+        }
+    ],
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/auth/google": {
+            "get": {
+                "tags": [
+                    "Google"
+                ],
+                "summary": "Google Authentication",
+                "description": "",
+                "operationId": "",
+                "consumes": [
+                    "application/json"
+                   
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "sigin using Google",
+                        "required": true,
+                        "schema": {
+                            "$ref": ""
+                        }
+                    }
+                ],
+                "responses": {
+                   
+                },
+                "security": [
+                   
+                ]
+            }
+        },
+        "/auth/facebook": {
+            "get": {
+                "tags": [
+                    "Facebook"
+                ],
+                "summary": "Facebook Authentication",
+                "description": "",
+                "operationId": "",
+                "consumes": [
+                    "application/json"
+                   
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "sigin using facebook",
+                        "required": true,
+                        "schema": {
+                            "$ref": ""
+                        }
+                    }
+                ],
+                "responses": {
+                   
+                },
+                "security": [
+                   
+                ]
+            }
+        }
+    }
+}
